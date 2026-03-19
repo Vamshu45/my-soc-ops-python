@@ -26,7 +26,13 @@ target-version = "py313"
 line-length = 88
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "N", "W"]
+select = ["E", "F", "I", "N", "W", "UP", "ANN"]
+ignore = [
+    "ANN003",  # Missing type annotation for `**kwargs`
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["ANN001", "ANN201"]  # Tests don't require strict annotations
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
