@@ -66,18 +66,48 @@ This project uses custom CSS utility classes (similar to Tailwind) defined in `a
 .animate-[bounce_0.5s_ease-out]
 ```
 
+### Emphasis & Highlights (Playfair Display)
+Uses Google Font **Playfair Display** for elegant emphasis:
+
+```css
+.font-playfair              /* Playfair Display, bold (700) */
+.underline                  /* Simple underline with 2px thickness */
+.underline-accent           /* Blue underline (3px) */
+.highlight                  /* Playfair Display bold text, 1.125rem */
+.highlight-underline        /* Playfair + blue underline (3px) */
+.highlight-accent           /* Bold Playfair (900), blue, underlined */
+.emphasis-title             /* Large Playfair (1.875rem) with blue underline */
+```
+
+**Usage Examples:**
+```html
+<!-- Simple highlight -->
+<span class="highlight">Important Info</span>
+
+<!-- Highlight with underline -->
+<span class="highlight-underline">Key Point</span>
+
+<!-- Accent emphasis -->
+<span class="highlight-accent">Call to Action</span>
+
+<!-- Large title with emphasis -->
+<h2 class="emphasis-title">Section Title</h2>
+```
+
 ## Best Practices
 
 1. **Compose utilities**: Combine classes for complex layouts
 2. **Add new utilities to app.css**: When needed, follow existing patterns
 3. **Use CSS variables**: For theming, define in `:root`
 4. **Keep specificity low**: Utility classes should be single-purpose
+5. **Playfair usage**: Reserve highlight classes for truly important information to maintain visual hierarchy
 
 ## Example Component Styling
 ```html
 <div class="flex flex-col items-center justify-center min-h-full bg-gray-50">
+    <h1 class="emphasis-title mb-4">Welcome</h1>
     <button class="px-6 py-3 bg-accent text-white rounded-lg font-semibold">
-        Start Game
+        <span class="highlight-underline">Start Game</span>
     </button>
 </div>
 ```

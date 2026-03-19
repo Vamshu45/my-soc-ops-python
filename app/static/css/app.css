@@ -161,3 +161,62 @@ button:disabled {
 .animate-\[bounce_0\.5s_ease-out\] {
     animation: bounce 0.5s ease-out;
 }
+
+/* Playfair Display highlight utilities */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.underline-accent {
+    text-decoration: underline;
+    text-decoration-color: #2563eb;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+}
+
+.highlight {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #1f2937;
+}
+
+.highlight-underline {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #1f2937;
+    text-decoration: underline;
+    text-decoration-color: #2563eb;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+}
+
+.highlight-accent {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: #2563eb;
+    text-decoration: underline;
+    text-decoration-color: #2563eb;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+.emphasis-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 1.875rem;
+    color: #1f2937;
+    text-decoration: underline;
+    text-decoration-color: #2563eb;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+}
